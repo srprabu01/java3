@@ -1,0 +1,46 @@
+public class Counter
+ {
+    int count;
+    Static int count1=1;
+   public void setCounterToZero()
+   {   
+      count = 0;
+   }
+   
+   public void counterPlusOne()
+   {
+      count = count++;
+   }
+ public void displayCount()
+   {
+      System.out.println(count);
+   }
+ public void SsetCounterToZero()
+   {   
+      count1 = 0;
+   }
+  
+   public void ScounterPlusOne()
+   {
+      count = count1++;
+   }
+ public void SdisplayCount()
+   {
+      System.out.println(count1);
+   }
+}
+public class CounterTest
+ {
+   public static void main(String[] args)
+   {
+      Counter counter = new Counter();
+      counter.setCounterToZero();
+      counter.displayCount();
+      counter.counterPlusOne();
+      counter.displayCount();
+      counter.SsetCounterToZero();
+      counter.SdisplayCount();
+      counter.ScounterPlusOne();
+      counter.SdisplayCount();
+  }
+}

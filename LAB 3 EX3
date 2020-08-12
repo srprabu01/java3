@@ -1,0 +1,58 @@
+import java.util.Scanner; 
+
+public class Arr { 
+	            public static void getarr()
+	            { 
+		Scanner scanner = new Scanner(System.in); 
+		int i,j; 
+
+		System.Out.Println("enter the 1D,2D,3D values");
+		ti = scanner.nextInt(); 
+                                     tj = scanner.nextInt(); 
+                                     tk=scanner.nextInt();
+                                   int[] array1 = new int[ti]; 
+		for (int i = 0; i < ti; i++) { 
+			
+				array1[i] = scanner.nextInt(); 
+			} 
+		 System.out.println("1D Array");
+                                     for(int data: array1){
+               		 System.out.println(data);
+            		}
+		int[][] array2 = new int[ti][tj]; 
+		for (int i = 0; i < ti; i++) { 
+			for (int j = 0; j < tj; j++) { 
+				array2[i][j] = scanner.nextInt(); 
+			} 
+		} 
+		 System.out.println("2D Array");
+                                  for (int[] a: array2) {
+                                     for(int data: a)
+               		 System.out.println(data);
+            		}
+                                 }
+                               int[][][] array3 = new int[ti][tj][tk]; 
+		for (int i = 0; i < ti; i++) { 
+			for (int j = 0; j < tj; j++) { 
+				for (int k = 0; k< tk; k++) {
+				array3[i][j][k] = scanner.nextInt(); 
+			} 
+		} 
+                                }
+	 System.out.println("3D Array");
+	               for(int[][] arr:array3){
+                                  for (int[] a: arr) {
+                                     for(int data: a)
+               		 System.out.println(data);
+            		}
+                                 }
+                                }
+        }
+}
+public class Main{
+	public static void main(String[] args) 
+	{ 
+                    Arr a=new Arr();
+                   a.getarr();
+               }
+}

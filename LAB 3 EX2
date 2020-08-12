@@ -1,0 +1,28 @@
+public class Student
+ {
+    String name;
+    int rollno;
+   Static String collegename;
+   public Student(String name,int rollno,String collegename){
+	this.name=name;
+	this.rollno=rollno;
+	this.collegename=collegename;
+  }
+ public void get(){
+	System.Out.Println(name);
+	System.Out.Println(rollno);
+	System.Out.Println(collegename);
+  }
+}
+
+public class Main{
+   public static void main(String args[]){
+    
+    Student[] obj = new Student[2] ;
+     obj[0] = new Student(1,"RamaKrishnan","Velammal");
+     obj[1] = new Student(2,"Prawin","Velammal");
+     System.out.println("Student Object 1:");
+     obj[0].get();
+     obj[1].get();
+  }
+}
